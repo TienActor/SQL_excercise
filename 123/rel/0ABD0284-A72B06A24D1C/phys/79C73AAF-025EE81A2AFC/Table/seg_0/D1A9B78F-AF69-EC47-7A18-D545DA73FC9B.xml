@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="DEPARTMENTS" directorySegmentName="seg_0" id="D1A9B78F-AF69-EC47-7A18-D545DA73FC9B">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:03 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+<schemaObject>E8854726-EFFE-8FE3-DF0C-F7FCDF3665FA</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>946A9A32-61F1-8C36-8B07-D4AADF3636C8</segment>
+<tableSpace>68B85CD7-BE0F-8F97-68DA-CC9DF651ABF5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DEPARTMENT_NAME" id="2FCDCD97-BFE5-DBF5-CC78-6D65AD56D4F3">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:04 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MANAGER_ID" id="4BF10F73-D6C4-770A-150A-521E405086DF">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:04 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DEPARTMENT_ID" id="712B924D-FEE7-6017-1FC0-BE9BA4CEB8F2">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:04 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="LOCATION_ID" id="DDCBFF8F-5FCB-A6BF-2FDB-63C47899A731">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:04 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPT_LOCATION_IX" id="9A03432D-4DE7-75DB-784E-B41712A8799B">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:05 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+<schemaObject>E8854726-EFFE-8FE3-DF0C-F7FCDF3665FA</schemaObject>
+<segment>FB03A0BF-E168-779C-BBBA-1822A4342743</segment>
+<tableSpace>68B85CD7-BE0F-8F97-68DA-CC9DF651ABF5</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="DEPT_ID_PK" id="B81FC2C3-8044-50B6-A263-CF6847D179E0">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:05 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+<schemaObject>E8854726-EFFE-8FE3-DF0C-F7FCDF3665FA</schemaObject>
+<segment>FB03A0BF-E168-779C-BBBA-1822A4342743</segment>
+<tableSpace>68B85CD7-BE0F-8F97-68DA-CC9DF651ABF5</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DEPT_LOC_FK" id="4FE417A5-0EDE-CF29-A2DA-93A91681CCDE">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:05 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="DEPT_MGR_FK" id="A242FDDD-CFD5-2A37-C865-D19B116401A9">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:05 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DEPT_ID_PK" id="14EC8937-76D1-D9A6-7A41-8C8E05801966">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 09:04:05 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+<segment>FB03A0BF-E168-779C-BBBA-1822A4342743</segment>
+<tableSpace>68B85CD7-BE0F-8F97-68DA-CC9DF651ABF5</tableSpace>
+<existingIndex>B81FC2C3-8044-50B6-A263-CF6847D179E0</existingIndex>
+<indexSegment>FB03A0BF-E168-779C-BBBA-1822A4342743</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

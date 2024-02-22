@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="123" id="A2A9C0B4-FDD5-A643-A7C2-EC531B43EBAF" version="3.5">
+<createdBy>TIEN</createdBy>
+<createdTime>2024-02-22 08:39:55 UTC</createdTime>
+<ownerDesignName>123</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>A2A9C0B4-FDD5-A643-A7C2-EC531B43EBAF</designId>
+</OSDM_Design>
