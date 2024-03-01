@@ -87,6 +87,26 @@ select*from JOB_HISTORY
 go
 
 
+--- Câu 7
+CREATE OR REPLACE PROCEDURE cau7(manv IN NUMBER)
+AS
+CURSOR c_cau7 IS
+    SELECT (e.first_name || ' ' || e.last_name) AS tennhanvien,
+           j.start_date AS ngaybatdau,
+           j.end_date AS ngayketthuc,
+           j.job_id AS macongviec
+    FROM employees e
+    JOIN job_history j ON e.employee_id = j.employee_id
+    WHERE e.employee_id = manv;
+BEGIN
+    FOR r IN c_cau7 LOOP
+        dbms_output.put_line('Ten nhan vien: ' || r.tennhanvien ||
+                             ', Ngay bat dau: ' || r.ngaybatdau ||
+                             ', Ngay ket thuc: ' || r.ngayketthuc ||
+                             ', Ma cong viec: ' || r.macongviec);
+    END LOOP;
+END;
+
 
 --- Nhập vào giá trị lượng tối thiểu X và giá trị lương tối đa Y, cho biết thông tin các nhân viên có 
 ---lương từ X đến Y đó.
